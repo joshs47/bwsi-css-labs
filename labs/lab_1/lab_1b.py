@@ -38,6 +38,7 @@ def simple_calculator(operation: str, num1: float, num2: float) -> float:
         raise ValueError("Invalid operation. Please choose from 'add', 'subtract', 'multiply', or 'divide'.")
 
 def request_sanitized_number(prompt: str) -> float:
+    #make sure no error when user enters something other than number
     while True:
         try:
             number = float(input(prompt))
